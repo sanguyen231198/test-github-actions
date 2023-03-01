@@ -20,7 +20,6 @@ jobs:
         with:
           mode: exactly
           count: 0
-          labels: "do not build"
       - run: echo "TODAY=$(date +%y-%m-%d)" >> $GITHUB_ENV
       - run: echo Hello 2, today is $TODAY
       - run: docker image ls
